@@ -7,15 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import <FYX/FYX.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [FYX setAppId:@"0b74e13965e993ceb278ccc7522e2ea126d585879cb6fbeeaba37d89ab6e0c11" appSecret:@"c413d659a3d8bb0c036b4de9017708ab1f1472445aa6de625ecbf8d990443aad" callbackUrl:@"motivatedsoftwareblicketmobile://authcode"];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -42,5 +44,4 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 @end
